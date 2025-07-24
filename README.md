@@ -72,6 +72,28 @@ Evaluated using:
 
 ---
 
+## 📊 Model Evaluation: Training vs Testing Scores
+
+Each model was evaluated using a custom function that prints:
+
+- ✅ **Training R² Score**  
+- ✅ **Testing R² Score**
+- 📉 **MAE (Mean Absolute Error)**
+- 📉 **MSE (Mean Squared Error)**
+- 📉 **RMSE (Root Mean Squared Error)**
+- 📈 **R² and Adjusted R² Score**
+
+The scores from the best performing models were:
+
+| Model                | Training R² | Testing R² | RMSE   | MAE    |
+|---------------------|-------------|------------|--------|--------|
+| Random Forest        | ~0.91       | ~0.67      | ~360.1 | ~180.3 |
+| XGBoost Regressor    | ~0.89       | ~0.65      | ~370.5 | ~185.9 |
+| Linear Regression    | ~0.70       | ~0.52      | ~410.2 | ~210.1 |
+| KNN Regressor        | ~0.61       | ~0.48      | ~430.3 | ~225.6 |
+
+---
+
 ## ✅ Conclusion
 
 - The **Random Forest** and **XGBoost Regressors** performed the best, achieving an **R² score of ~0.67** and **low error rates**.
